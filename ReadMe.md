@@ -20,7 +20,7 @@ Müşterinin kendisine en uygun bulduğu rezervasyon tipine göre, en basit ve a
 * [Rapor Ekranı](https://raw.githubusercontent.com/Alparslan524/OtelRezervasyonUygulamasi/main/EkranGoruntuleri/YöneticiRaporEkrani.png)
 * [Çalışan Ekleme Ekranı ](https://raw.githubusercontent.com/Alparslan524/OtelRezervasyonUygulamasi/main/EkranGoruntuleri/CalisanKayitEkrani.png)
 * [Rezervasyon İşlemleri](https://raw.githubusercontent.com/Alparslan524/OtelRezervasyonUygulamasi/main/EkranGoruntuleri/RezervasyonEkrani.png)
-
+***
 ## Kullanılan Diller
 * C#
 ## Kullanılan Veritabanı
