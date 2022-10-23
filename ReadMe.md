@@ -1,4 +1,4 @@
-# Proje Adı
+# Otel Rezervasyonu
 
 ## Proje Amacı
 Müşterinin kendisine en uygun bulduğu rezervasyon tipine göre, en basit ve anlaşılır rezervasyon yapması amaçlanmıştır.
