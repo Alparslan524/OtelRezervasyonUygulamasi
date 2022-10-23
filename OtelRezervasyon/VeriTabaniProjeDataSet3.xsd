@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="VeriTabaniProjeDataSet3" targetNamespace="http://tempuri.org/VeriTabaniProjeDataSet3.xsd" xmlns:mstns="http://tempuri.org/VeriTabaniProjeDataSet3.xsd" xmlns="http://tempuri.org/VeriTabaniProjeDataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="VeriTabaniProjeConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="VeriTabaniProjeConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.OtelRezervasyon.Properties.Settings.GlobalReference.Default.VeriTabaniProjeConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="BeklenenDolulukraporuTableAdapter" GeneratorDataComponentClassName="BeklenenDolulukraporuTableAdapter" Name="BeklenenDolulukraporu" UserDataComponentName="BeklenenDolulukraporuTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="VeriTabaniProjeConnectionString (Settings)" DbObjectName="VeriTabaniProje.dbo.BeklenenDolulukraporu" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [1 Ay içindeki Rezervasyon Sayısı], [Rezervasyon tipi] FROM dbo.BeklenenDolulukraporu</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="1 Ay içindeki Rezervasyon Sayısı" DataSetColumn="1 Ay içindeki Rezervasyon Sayısı" />
+              <Mapping SourceColumn="Rezervasyon tipi" DataSetColumn="Rezervasyon tipi" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="VeriTabaniProjeDataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="VeriTabaniProjeDataSet3" msprop:Generator_UserDSName="VeriTabaniProjeDataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BeklenenDolulukraporu" msprop:Generator_TableClassName="BeklenenDolulukraporuDataTable" msprop:Generator_TableVarName="tableBeklenenDolulukraporu" msprop:Generator_TablePropName="BeklenenDolulukraporu" msprop:Generator_RowDeletingName="BeklenenDolulukraporuRowDeleting" msprop:Generator_RowChangingName="BeklenenDolulukraporuRowChanging" msprop:Generator_RowEvHandlerName="BeklenenDolulukraporuRowChangeEventHandler" msprop:Generator_RowDeletedName="BeklenenDolulukraporuRowDeleted" msprop:Generator_UserTableName="BeklenenDolulukraporu" msprop:Generator_RowChangedName="BeklenenDolulukraporuRowChanged" msprop:Generator_RowEvArgName="BeklenenDolulukraporuRowChangeEvent" msprop:Generator_RowClassName="BeklenenDolulukraporuRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="_x0031__x0020_Ay_x0020_içindeki_x0020_Rezervasyon_x0020_Sayısı" msprop:Generator_ColumnVarNameInTable="column1_Ay_içindeki_Rezervasyon_Sayısı" msprop:Generator_ColumnPropNameInRow="_1_Ay_içindeki_Rezervasyon_Sayısı" msprop:Generator_ColumnPropNameInTable="_1_Ay_içindeki_Rezervasyon_SayısıColumn" msprop:Generator_UserColumnName="1 Ay içindeki Rezervasyon Sayısı" type="xs:int" minOccurs="0" />
+              <xs:element name="Rezervasyon_x0020_tipi" msprop:Generator_ColumnVarNameInTable="columnRezervasyon_tipi" msprop:Generator_ColumnPropNameInRow="Rezervasyon_tipi" msprop:Generator_ColumnPropNameInTable="Rezervasyon_tipiColumn" msprop:Generator_UserColumnName="Rezervasyon tipi" type="xs:unsignedByte" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

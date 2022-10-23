@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="VeriTabaniProjeDataSet5" targetNamespace="http://tempuri.org/VeriTabaniProjeDataSet5.xsd" xmlns:mstns="http://tempuri.org/VeriTabaniProjeDataSet5.xsd" xmlns="http://tempuri.org/VeriTabaniProjeDataSet5.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="VeriTabaniProjeConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="VeriTabaniProjeConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.OtelRezervasyon.Properties.Settings.GlobalReference.Default.VeriTabaniProjeConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="GunlukGelenlerRaporuTableAdapter" GeneratorDataComponentClassName="GunlukGelenlerRaporuTableAdapter" Name="GunlukGelenlerRaporu" UserDataComponentName="GunlukGelenlerRaporuTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="VeriTabaniProjeConnectionString (Settings)" DbObjectName="VeriTabaniProje.dbo.GunlukGelenlerRaporu" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Müşteri İsmi], [Rezervasyon Adı], [Oda Numarası], [Çıkış Tarihi] FROM dbo.GunlukGelenlerRaporu</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Müşteri İsmi" DataSetColumn="Müşteri İsmi" />
+              <Mapping SourceColumn="Rezervasyon Adı" DataSetColumn="Rezervasyon Adı" />
+              <Mapping SourceColumn="Oda Numarası" DataSetColumn="Oda Numarası" />
+              <Mapping SourceColumn="Çıkış Tarihi" DataSetColumn="Çıkış Tarihi" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="VeriTabaniProjeConnectionString (Settings)" DbObjectName="VeriTabaniProje.dbo.GunlukGelenlerRaporu" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        [Müşteri İsmi], [Rezervasyon Adı], [Oda Numarası], [Çıkış Tarihi]
+FROM            GunlukGelenlerRaporu
+</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="VeriTabaniProjeConnectionString (Settings)" DbObjectName="VeriTabaniProje.dbo.GunlukGelenlerRaporu" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillBy1" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy1" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="FillBy1">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        [Müşteri İsmi], [Rezervasyon Adı], [Oda Numarası], [Çıkış Tarihi]
+FROM            GunlukGelenlerRaporu
+ORDER BY [Müşteri İsmi]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="VeriTabaniProjeConnectionString (Settings)" DbObjectName="VeriTabaniProje.dbo.GunlukGelenlerRaporu" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillBy2" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy2" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="FillBy2">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        [Müşteri İsmi], [Rezervasyon Adı], [Oda Numarası], [Çıkış Tarihi]
+FROM            GunlukGelenlerRaporu
+ORDER BY [Müşteri İsmi]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="VeriTabaniProjeDataSet5" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="VeriTabaniProjeDataSet5" msprop:Generator_UserDSName="VeriTabaniProjeDataSet5">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="GunlukGelenlerRaporu" msprop:Generator_TableClassName="GunlukGelenlerRaporuDataTable" msprop:Generator_TableVarName="tableGunlukGelenlerRaporu" msprop:Generator_RowChangedName="GunlukGelenlerRaporuRowChanged" msprop:Generator_TablePropName="GunlukGelenlerRaporu" msprop:Generator_RowDeletingName="GunlukGelenlerRaporuRowDeleting" msprop:Generator_RowChangingName="GunlukGelenlerRaporuRowChanging" msprop:Generator_RowEvHandlerName="GunlukGelenlerRaporuRowChangeEventHandler" msprop:Generator_RowDeletedName="GunlukGelenlerRaporuRowDeleted" msprop:Generator_RowClassName="GunlukGelenlerRaporuRow" msprop:Generator_UserTableName="GunlukGelenlerRaporu" msprop:Generator_RowEvArgName="GunlukGelenlerRaporuRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Müşteri_x0020_İsmi" msprop:Generator_ColumnVarNameInTable="columnMüşteri_İsmi" msprop:Generator_ColumnPropNameInRow="Müşteri_İsmi" msprop:Generator_ColumnPropNameInTable="Müşteri_İsmiColumn" msprop:Generator_UserColumnName="Müşteri İsmi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Rezervasyon_x0020_Adı" msprop:Generator_ColumnVarNameInTable="columnRezervasyon_Adı" msprop:Generator_ColumnPropNameInRow="Rezervasyon_Adı" msprop:Generator_ColumnPropNameInTable="Rezervasyon_AdıColumn" msprop:Generator_UserColumnName="Rezervasyon Adı" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Oda_x0020_Numarası" msprop:Generator_ColumnVarNameInTable="columnOda_Numarası" msprop:Generator_ColumnPropNameInRow="Oda_Numarası" msprop:Generator_ColumnPropNameInTable="Oda_NumarasıColumn" msprop:Generator_UserColumnName="Oda Numarası" type="xs:unsignedByte" />
+              <xs:element name="Çıkış_x0020_Tarihi" msprop:Generator_ColumnVarNameInTable="columnÇıkış_Tarihi" msprop:Generator_ColumnPropNameInRow="Çıkış_Tarihi" msprop:Generator_ColumnPropNameInTable="Çıkış_TarihiColumn" msprop:Generator_UserColumnName="Çıkış Tarihi" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:GunlukGelenlerRaporu" />
+      <xs:field xpath="mstns:Oda_x0020_Numarası" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

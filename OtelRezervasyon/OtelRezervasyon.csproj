@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{27213DB1-EEF2-4739-94AA-A8A45424167D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OtelRezervasyon</RootNamespace>
+    <AssemblyName>OtelRezervasyon</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AltmisGunOncedenRez.cs" />
+    <Compile Include="calısanAyarları.cs" />
+    <Compile Include="frmCalisanAyarlari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCalisanAyarlari.Designer.cs">
+      <DependentUpon>frmCalisanAyarlari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCalisanEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCalisanEkran.Designer.cs">
+      <DependentUpon>frmCalisanEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCalisanRapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCalisanRapor.Designer.cs">
+      <DependentUpon>frmCalisanRapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGiris.Designer.cs">
+      <DependentUpon>frmGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKrediKart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKrediKart.Designer.cs">
+      <DependentUpon>frmKrediKart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOdaAyarları.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOdaAyarları.Designer.cs">
+      <DependentUpon>frmOdaAyarları.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRezervasyonSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRezervasyonSil.Designer.cs">
+      <DependentUpon>frmRezervasyonSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRezGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRezGuncelle.Designer.cs">
+      <DependentUpon>frmRezGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmYonetici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmYonetici.Designer.cs">
+      <DependentUpon>frmYonetici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmYoneticiRapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmYoneticiRapor.Designer.cs">
+      <DependentUpon>frmYoneticiRapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="girisSorgusu.cs" />
+    <Compile Include="IRezAl.cs" />
+    <Compile Include="Musteri.cs" />
+    <Compile Include="OnOdemeliRez.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StandartRez.cs" />
+    <Compile Include="TesvikRez.cs" />
+    <Compile Include="VeriTabaniProjeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VeriTabaniProjeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VeriTabaniProjeDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VeriTabaniProjeDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VeriTabaniProjeDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VeriTabaniProjeDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VeriTabaniProjeDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VeriTabaniProjeDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VeriTabaniProjeDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VeriTabaniProjeDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VeriTabaniProjeDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VeriTabaniProjeDataSet5.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmCalisanAyarlari.resx">
+      <DependentUpon>frmCalisanAyarlari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCalisanEkran.resx">
+      <DependentUpon>frmCalisanEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCalisanRapor.resx">
+      <DependentUpon>frmCalisanRapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGiris.resx">
+      <DependentUpon>frmGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKrediKart.resx">
+      <DependentUpon>frmKrediKart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOdaAyarları.resx">
+      <DependentUpon>frmOdaAyarları.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRezervasyonSil.resx">
+      <DependentUpon>frmRezervasyonSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRezGuncelle.resx">
+      <DependentUpon>frmRezGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmYonetici.resx">
+      <DependentUpon>frmYonetici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmYoneticiRapor.resx">
+      <DependentUpon>frmYoneticiRapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="VeriTabaniProjeDataSet.xsc">
+      <DependentUpon>VeriTabaniProjeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VeriTabaniProjeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VeriTabaniProjeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VeriTabaniProjeDataSet.xss">
+      <DependentUpon>VeriTabaniProjeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VeriTabaniProjeDataSet1.xsc">
+      <DependentUpon>VeriTabaniProjeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="VeriTabaniProjeDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VeriTabaniProjeDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VeriTabaniProjeDataSet1.xss">
+      <DependentUpon>VeriTabaniProjeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="VeriTabaniProjeDataSet2.xsc">
+      <DependentUpon>VeriTabaniProjeDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="VeriTabaniProjeDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VeriTabaniProjeDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VeriTabaniProjeDataSet2.xss">
+      <DependentUpon>VeriTabaniProjeDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="VeriTabaniProjeDataSet3.xsc">
+      <DependentUpon>VeriTabaniProjeDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="VeriTabaniProjeDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VeriTabaniProjeDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VeriTabaniProjeDataSet3.xss">
+      <DependentUpon>VeriTabaniProjeDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="VeriTabaniProjeDataSet4.xsc">
+      <DependentUpon>VeriTabaniProjeDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="VeriTabaniProjeDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VeriTabaniProjeDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VeriTabaniProjeDataSet4.xss">
+      <DependentUpon>VeriTabaniProjeDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="VeriTabaniProjeDataSet5.xsc">
+      <DependentUpon>VeriTabaniProjeDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="VeriTabaniProjeDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VeriTabaniProjeDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VeriTabaniProjeDataSet5.xss">
+      <DependentUpon>VeriTabaniProjeDataSet5.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

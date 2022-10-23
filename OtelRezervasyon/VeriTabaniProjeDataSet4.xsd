@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="VeriTabaniProjeDataSet4" targetNamespace="http://tempuri.org/VeriTabaniProjeDataSet4.xsd" xmlns:mstns="http://tempuri.org/VeriTabaniProjeDataSet4.xsd" xmlns="http://tempuri.org/VeriTabaniProjeDataSet4.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="VeriTabaniProjeConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="VeriTabaniProjeConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.OtelRezervasyon.Properties.Settings.GlobalReference.Default.VeriTabaniProjeConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="BeklenenOdaGelirRaporuTableAdapter" GeneratorDataComponentClassName="BeklenenOdaGelirRaporuTableAdapter" Name="BeklenenOdaGelirRaporu" UserDataComponentName="BeklenenOdaGelirRaporuTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="VeriTabaniProjeConnectionString (Settings)" DbObjectName="VeriTabaniProje.dbo.BeklenenOdaGelirRaporu" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Tarih, [30 Gün İçindeki Gelir], [30 Gün İçindeki Ortalama Gelir ] FROM dbo.BeklenenOdaGelirRaporu</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Tarih" DataSetColumn="Tarih" />
+              <Mapping SourceColumn="30 Gün İçindeki Gelir" DataSetColumn="30 Gün İçindeki Gelir" />
+              <Mapping SourceColumn="30 Gün İçindeki Ortalama Gelir " DataSetColumn="30 Gün İçindeki Ortalama Gelir " />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="VeriTabaniProjeDataSet4" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="VeriTabaniProjeDataSet4" msprop:Generator_UserDSName="VeriTabaniProjeDataSet4">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BeklenenOdaGelirRaporu" msprop:Generator_TableClassName="BeklenenOdaGelirRaporuDataTable" msprop:Generator_TableVarName="tableBeklenenOdaGelirRaporu" msprop:Generator_TablePropName="BeklenenOdaGelirRaporu" msprop:Generator_RowDeletingName="BeklenenOdaGelirRaporuRowDeleting" msprop:Generator_RowChangingName="BeklenenOdaGelirRaporuRowChanging" msprop:Generator_RowEvHandlerName="BeklenenOdaGelirRaporuRowChangeEventHandler" msprop:Generator_RowDeletedName="BeklenenOdaGelirRaporuRowDeleted" msprop:Generator_UserTableName="BeklenenOdaGelirRaporu" msprop:Generator_RowChangedName="BeklenenOdaGelirRaporuRowChanged" msprop:Generator_RowEvArgName="BeklenenOdaGelirRaporuRowChangeEvent" msprop:Generator_RowClassName="BeklenenOdaGelirRaporuRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Tarih" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTarih" msprop:Generator_ColumnPropNameInRow="Tarih" msprop:Generator_ColumnPropNameInTable="TarihColumn" msprop:Generator_UserColumnName="Tarih" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="_x0033_0_x0020_Gün_x0020_İçindeki_x0020_Gelir" msprop:Generator_ColumnVarNameInTable="column30_Gün_İçindeki_Gelir" msprop:Generator_ColumnPropNameInRow="_30_Gün_İçindeki_Gelir" msprop:Generator_ColumnPropNameInTable="_30_Gün_İçindeki_GelirColumn" msprop:Generator_UserColumnName="30 Gün İçindeki Gelir" type="xs:double" minOccurs="0" />
+              <xs:element name="_x0033_0_x0020_Gün_x0020_İçindeki_x0020_Ortalama_x0020_Gelir_x0020_" msprop:Generator_ColumnVarNameInTable="column30_Gün_İçindeki_Ortalama_Gelir_" msprop:Generator_ColumnPropNameInRow="_30_Gün_İçindeki_Ortalama_Gelir_" msprop:Generator_ColumnPropNameInTable="_30_Gün_İçindeki_Ortalama_Gelir_Column" msprop:Generator_UserColumnName="30 Gün İçindeki Ortalama Gelir " type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
